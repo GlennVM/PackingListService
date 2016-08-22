@@ -54,3 +54,5 @@ C:\Users\Glenn\Documents\PackingListService\PackingList\bin\System.Web.Http.WebH
 C:\Users\Glenn\Documents\PackingListService\PackingList\obj\Debug\PackingList.csprojResolveAssemblyReference.cache
 C:\Users\Glenn\Documents\PackingListService\PackingList\obj\Debug\PackingList.dll
 C:\Users\Glenn\Documents\PackingListService\PackingList\obj\Debug\PackingList.pdb
+C:\Users\Gebruiker\Source\Repos\PackingListService2zit\obj\Debug\PackingList.dll
+C:\Users\Gebruiker\Source\Repos\PackingListService2zit\obj\Debug\PackingList.pdb
