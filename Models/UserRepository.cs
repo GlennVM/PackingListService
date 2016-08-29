@@ -63,7 +63,23 @@ namespace PackingList.Models
 
         public User UpdateUser(User user)
         {
-            throw new NotImplementedException();
+            for(int i = 0; i < this.users.Count; i++)
+            {
+                if(this.users[i].Name.Equals(user.Name))
+                {
+                    if(user.Trips == null)
+                    {
+                        user.Trips = new List<TripComponent>();
+                    }
+                    if(user.ItemDictionary == null)
+                    {
+                        user.ItemDictionary = new List<TripComponent>();
+                    }
+                    this.users[i] = user;
+                    return user;
+                }
+            }
+            return null;
         }
     }
 }

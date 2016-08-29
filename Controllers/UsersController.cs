@@ -46,5 +46,18 @@ namespace PackingList.Controllers
                 return Request.CreateResponse(HttpStatusCode.BadRequest);
             }
         }
+
+        [HttpPatch]
+        public HttpResponseMessage updateUser(User user)
+        {
+            User patched = repo.UpdateUser(user);
+            if (patched != null)
+            {
+                return Request.CreateResponse(HttpStatusCode.OK);
+            } else
+            {
+                return Request.CreateResponse(HttpStatusCode.NotFound);
+            }
+        }
     }
 }
