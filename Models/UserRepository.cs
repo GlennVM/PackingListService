@@ -7,27 +7,36 @@ namespace PackingList.Models
 {
     public class UserRepository : IUserRepository
     {
-        User[] user = new User[]
+        List<User> users = new List<User>
         {
-            new User {Name = "Glenn", Password = "Test", Trips = new Trip[]
+            new User {Name = "Glenn", Password = "Test", Trips = new List<TripComponent>
                 {
-                    new Trip {Id = 1, Name = "Frankrijk" },
-                    new Trip {Id = 2, Name = "Nederland" }
+                    new Trip {Title = "Frankrijk", items = new List<TripComponent>(), tasks = new List<TripComponent>() },
+                    new Trip {Title = "Nederland", items = new List<TripComponent>(), tasks = new List<TripComponent>() }
                 }
             },
-            new User {Name = "Jens", Password = "Test" }
+            new User {Name = "Jens", Password = "Test", Trips = new List<TripComponent>() }
         };
         public User AddUser(User user)
         {
-            this.user.ToList().Add(user);
+            if(user.ItemDictionary == null)
+            {
+                user.ItemDictionary = new List<TripComponent>();
+            }
+            if(user.Trips == null)
+            {
+                user.Trips = new List<TripComponent>();
+            }
+
+            this.users.Add(user);
             return user;
         }
 
         public bool DeleteUser(User user)
         {
-            for (int i = 0; i < this.user.Length; i++)
+            for (int i = 0; i < this.users.Count; i++)
             {
-                if (this.user[i].Name == user.Name)
+                if (this.users[i].Name == user.Name)
                 {
                     return true;
                 }
@@ -37,16 +46,16 @@ namespace PackingList.Models
 
         public IEnumerable<User> GetAllUsers()
         {
-            return this.user;
+            return this.users;
         }
 
-        public User GetUser(string name)
+        public User GetUser(string name, string pass)
         {
-            for (int i = 0; i < this.user.Length; i++)
+            for (int i = 0; i < this.users.Count; i++)
             {
-                if (this.user[i].Name == name)
+                if (this.users[i].Name.Equals(name) && this.users[i].Password.Equals(pass))
                 {
-                    return this.user[i];
+                    return this.users[i];
                 }
             }
             return null;

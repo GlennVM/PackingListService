@@ -10,7 +10,7 @@ namespace PackingList.Models
     {
         User AddUser(User user);
         IEnumerable<User> GetAllUsers();
-        User GetUser(String name);
+        User GetUser(String name, String pass);
         User UpdateUser(User user);
         Boolean DeleteUser(User user);
     }

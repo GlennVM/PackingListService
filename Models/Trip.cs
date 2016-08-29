@@ -6,12 +6,10 @@ using System.Web;
 
 namespace PackingList.Models
 {
-    public class Trip
+    public class Trip : TripComponent
     {
-        [Required]
-        public int Id { get; set; }
-        [Required]
-        public string Name { get; set; }
-        public Item[] Items { get; set; }
+        public string Title { get; set; }
+        public IList<TripComponent> items { get; set; }
+        public IList<TripComponent> tasks { get; set; }
     }
 }

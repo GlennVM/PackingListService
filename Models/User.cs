@@ -10,6 +10,7 @@ namespace PackingList.Models
     {
         public string Name { get; set; }
         public string Password { get; set; }
-        public Trip[] Trips { get; set; }
+        public List<TripComponent> Trips { get; set; }
+        public List<TripComponent> ItemDictionary { get; set; }
     }
 }

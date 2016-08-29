@@ -29,5 +29,22 @@ namespace PackingList.Controllers
                 return Request.CreateResponse(HttpStatusCode.NotFound);
             }
         }
+
+        [HttpPost]
+        public HttpResponseMessage AddUser(User user)
+        {
+            int userCount = repo.GetAllUsers().Count();
+            User added = repo.AddUser(user);
+            int upUserCount = repo.GetAllUsers().Count();
+
+            if (userCount == upUserCount - 1)
+            {
+                return Request.CreateResponse(HttpStatusCode.OK);
+            }
+            else
+            {
+                return Request.CreateResponse(HttpStatusCode.BadRequest);
+            }
+        }
     }
 }
