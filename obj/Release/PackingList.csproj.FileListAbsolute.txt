@@ -54,3 +54,7 @@ C:\Users\Glenn\Documents\PackingListService\PackingList\bin\System.Web.Http.WebH
 C:\Users\Glenn\Documents\PackingListService\PackingList\obj\Release\PackingList.csprojResolveAssemblyReference.cache
 C:\Users\Glenn\Documents\PackingListService\PackingList\obj\Release\PackingList.dll
 C:\Users\Glenn\Documents\PackingListService\PackingList\obj\Release\PackingList.pdb
+C:\Users\Glenn\Desktop\Windows - TravelList - Examen\PackingList\PackingList\bin\EntityFramework.dll
+C:\Users\Glenn\Desktop\Windows - TravelList - Examen\PackingList\PackingList\bin\EntityFramework.SqlServer.dll
+C:\Users\Glenn\Desktop\Windows - TravelList - Examen\PackingList\PackingList\bin\EntityFramework.xml
+C:\Users\Glenn\Desktop\Windows - TravelList - Examen\PackingList\PackingList\bin\EntityFramework.SqlServer.xml

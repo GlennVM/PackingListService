@@ -1,2 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<parameters />
+<parameters>
+  <parameter name="LocalSqlServer-Web.config Connection String" description="LocalSqlServer Connection String used in web.config by the application to access the database." defaultValue="Server=tcp:sqldatabasepackinglist.database.windows.net,1433;Initial Catalog=DBpackinglist;Persist Security Info=False;User ID={rootpackinglist};Password={Root!123};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Glenn\\Desktop\\Windows\ -\ TravelList\ -\ Examen\\PackingList\\PackingList\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='LocalSqlServer']/@connectionString" />
+  </parameter>
+  <parameter name="PackingListContext-Web.config Connection String" description="PackingListContext Connection String used in web.config by the application to access the database." defaultValue="Data Source=(localdb)\MSSQLLocalDB; Initial Catalog=PackingListContext-20160829121200; Integrated Security=True; MultipleActiveResultSets=True; AttachDbFilename=|DataDirectory|PackingListContext-20160829121200.mdf" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Glenn\\Desktop\\Windows\ -\ TravelList\ -\ Examen\\PackingList\\PackingList\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='PackingListContext']/@connectionString" />
+  </parameter>
+  <parameter name="UserContext-Web.config Connection String" description="UserContext Connection String used in web.config by the application to access the database." defaultValue="UserContext_ConnectionString" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Glenn\\Desktop\\Windows\ -\ TravelList\ -\ Examen\\PackingList\\PackingList\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='UserContext']/@connectionString" />
+  </parameter>
+</parameters>
