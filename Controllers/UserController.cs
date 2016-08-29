@@ -20,7 +20,10 @@ namespace PackingList.Controllers
         // GET: api/User
         public IQueryable<User> GetUsers()
         {
-            return db.Users;
+            return db.Users
+                .Include(t => t.Trips.Select(u => u.items))
+                .Include(t => t.Trips.Select(u => u.tasks))
+                .Include(u => u.ItemDictionary);
         }
 
         // GET: api/User/5

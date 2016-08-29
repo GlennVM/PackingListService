@@ -9,23 +9,23 @@ namespace PackingList.Models
     {
         List<User> users = new List<User>
         {
-            new User {Name = "Glenn", Password = "Test", Trips = new List<TripComponent>
+            new User {Name = "Glenn", Password = "Test", Trips = new List<Trip>
                 {
-                    new Trip {Title = "Frankrijk", items = new List<TripComponent>(), tasks = new List<TripComponent>() },
-                    new Trip {Title = "Nederland", items = new List<TripComponent>(), tasks = new List<TripComponent>() }
+                    new Trip {Title = "Frankrijk", items = new List<Item>(), tasks = new List<Task>() },
+                    new Trip {Title = "Nederland", items = new List<Item>(), tasks = new List<Task>() }
                 }
             },
-            new User {Name = "Jens", Password = "Test", Trips = new List<TripComponent>() }
+            new User {Name = "Jens", Password = "Test", Trips = new List<Trip>() }
         };
         public User AddUser(User user)
         {
             if(user.ItemDictionary == null)
             {
-                user.ItemDictionary = new List<TripComponent>();
+                user.ItemDictionary = new List<Item>();
             }
             if(user.Trips == null)
             {
-                user.Trips = new List<TripComponent>();
+                user.Trips = new List<Trip>();
             }
 
             this.users.Add(user);
@@ -69,11 +69,11 @@ namespace PackingList.Models
                 {
                     if(user.Trips == null)
                     {
-                        user.Trips = new List<TripComponent>();
+                        user.Trips = new List<Trip>();
                     }
                     if(user.ItemDictionary == null)
                     {
-                        user.ItemDictionary = new List<TripComponent>();
+                        user.ItemDictionary = new List<Item>();
                     }
                     this.users[i] = user;
                     return user;

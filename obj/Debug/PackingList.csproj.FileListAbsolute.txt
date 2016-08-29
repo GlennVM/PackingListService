@@ -59,3 +59,4 @@ C:\Users\Glenn\Desktop\Windows - TravelList - Examen\PackingList\PackingList\bin
 C:\Users\Glenn\Desktop\Windows - TravelList - Examen\PackingList\PackingList\bin\EntityFramework.SqlServer.dll
 C:\Users\Glenn\Desktop\Windows - TravelList - Examen\PackingList\PackingList\bin\EntityFramework.xml
 C:\Users\Glenn\Desktop\Windows - TravelList - Examen\PackingList\PackingList\bin\EntityFramework.SqlServer.xml
+C:\Users\Glenn\Desktop\Windows - TravelList - Examen\PackingList\PackingList\obj\Debug\PackingList.csprojResolveAssemblyReference.cache

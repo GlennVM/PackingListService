@@ -13,6 +13,7 @@ namespace PackingList.DAL
 
         public UserContext() : base("UserContext")
         {
+            this.Configuration.LazyLoadingEnabled = false;
         }
 
         public DbSet<User> Users { get; set; }

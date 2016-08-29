@@ -13,7 +13,7 @@ namespace PackingList.Models
         public int UserId { get; set; }
         public string Name { get; set; }
         public string Password { get; set; }
-        public List<TripComponent> Trips { get; set; }
-        public List<TripComponent> ItemDictionary { get; set; }
+        public List<Trip> Trips { get; set; }
+        public List<Item> ItemDictionary { get; set; }
     }
 }

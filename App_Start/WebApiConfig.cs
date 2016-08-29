@@ -1,5 +1,7 @@
-﻿using System;
+﻿using PackingList.DAL;
+using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Web.Http;
 
@@ -10,7 +12,7 @@ namespace PackingList
         public static void Register(HttpConfiguration config)
         {
             // Web API configuration and services
-
+            
             // Web API routes
             config.MapHttpAttributeRoutes();
 
@@ -19,6 +21,8 @@ namespace PackingList
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
+
+            Database.SetInitializer(new UserInitializer());
         }
     }
 }
