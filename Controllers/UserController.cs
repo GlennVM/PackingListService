@@ -30,7 +30,11 @@ namespace PackingList.Controllers
         [ResponseType(typeof(User))]
         public IHttpActionResult GetUser(int id)
         {
-            User user = db.Users.Find(id);
+            User user = db.Users.Where(u => u.UserId == id)
+                .Include(p => p.Trips.Select(g => g.items))
+                .Include(j => j.Trips.Select(f => f.tasks))
+                .Include(i => i.ItemDictionary)
+                .FirstOrDefault();
             if (user == null)
             {
                 return NotFound();
