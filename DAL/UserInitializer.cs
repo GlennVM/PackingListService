@@ -29,8 +29,8 @@ namespace PackingList.DAL
 
             var users = new List<User>
             {
-                new User{Name = "Glenn", Password = "Test", ItemDictionary = itemDict, Trips = trips},
-                new User{Name = "Dean", Password = "Test", ItemDictionary = new List<Item>(), Trips = new List<Trip>()},
+                new User{Name = "Glenn", Password = "Test", EmailAddress = "glenn.vanmele@uwp.com", ItemDictionary = itemDict, Trips = trips},
+                new User{Name = "Dean", Password = "Test", EmailAddress = "dean.delanoye@uwp.com", ItemDictionary = new List<Item>(), Trips = new List<Trip>()},
             };
 
             users.ForEach(s => context.Users.Add(s));
