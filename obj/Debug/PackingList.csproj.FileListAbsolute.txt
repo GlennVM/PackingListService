@@ -46,7 +46,6 @@ C:\Users\Glenn\Documents\PackingListService\PackingList\bin\System.Net.Http.Form
 C:\Users\Glenn\Documents\PackingListService\PackingList\bin\System.Web.Http.dll
 C:\Users\Glenn\Documents\PackingListService\PackingList\bin\System.Web.Http.WebHost.dll
 C:\Users\Glenn\Documents\PackingListService\PackingList\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\Glenn\Documents\PackingListService\PackingList\bin\Newtonsoft.Json.xml
 C:\Users\Glenn\Documents\PackingListService\PackingList\bin\System.Net.Http.Formatting.xml
 C:\Users\Glenn\Documents\PackingListService\PackingList\bin\System.Web.Http.xml
 C:\Users\Glenn\Documents\PackingListService\PackingList\bin\System.Web.Http.WebHost.xml
@@ -60,3 +59,8 @@ C:\Users\Glenn\Desktop\Windows - TravelList - Examen\PackingList\PackingList\bin
 C:\Users\Glenn\Desktop\Windows - TravelList - Examen\PackingList\PackingList\bin\EntityFramework.xml
 C:\Users\Glenn\Desktop\Windows - TravelList - Examen\PackingList\PackingList\bin\EntityFramework.SqlServer.xml
 C:\Users\Glenn\Desktop\Windows - TravelList - Examen\PackingList\PackingList\obj\Debug\PackingList.csprojResolveAssemblyReference.cache
+C:\Users\Glenn\Documents\PackingListService\PackingList\bin\EntityFramework.dll
+C:\Users\Glenn\Documents\PackingListService\PackingList\bin\EntityFramework.SqlServer.dll
+C:\Users\Glenn\Documents\PackingListService\PackingList\bin\EntityFramework.xml
+C:\Users\Glenn\Documents\PackingListService\PackingList\bin\EntityFramework.SqlServer.xml
+C:\Users\Glenn\Documents\PackingListService\PackingList\bin\Newtonsoft.Json.xml
