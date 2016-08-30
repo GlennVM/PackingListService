@@ -12,7 +12,8 @@ namespace PackingList.DAL
         {
             List<Item> items = new List<Item>
             {
-                new Item {Name = "Broek", Amount = 1, Category = "Clothing", Checked = false }
+                new Item {Name = "Broek", Amount = 1, Category = "Clothing", Checked = false },
+                new Item {Name = "Jas", Amount = 1, Category = "Clothing", Checked = true }
             };
 
             List<Trip> trips = new List<Trip>
@@ -23,8 +24,8 @@ namespace PackingList.DAL
 
             List<Item> itemDict = new List<Item>
             {
-                new Item {Name = "Broek" },
-                new Item {Name = "T-Shirt" }
+                new Item {Name = "Broek", Category = "Clothing" },
+                new Item {Name = "T-Shirt", Category = "Clothing" }
             };
 
             var users = new List<User>
