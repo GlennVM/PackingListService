@@ -26,6 +26,16 @@ namespace PackingList.Controllers
                 .Include(u => u.ItemDictionary);
         }
 
+        [ResponseType(typeof(User))]
+        public User GetItemByNameAndId(int id, string name, string pass)
+        {
+            User user = db.Users.Where(u => u.Name == name)
+                .Where(t => t.Password == pass)
+                .FirstOrDefault();
+            return user;
+        }
+
+
         // GET: api/User/5
         [ResponseType(typeof(User))]
         public IHttpActionResult GetUser(int id)
