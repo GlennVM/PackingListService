@@ -27,12 +27,16 @@ namespace PackingList.Controllers
         }
 
         [ResponseType(typeof(User))]
-        public User GetItemByNameAndId(int id, string name, string pass)
+        public IHttpActionResult GetItemByNameAndId(int id, string name, string pass)
         {
             User user = db.Users.Where(u => u.Name == name)
                 .Where(t => t.Password == pass)
                 .FirstOrDefault();
-            return user;
+            if (user != null)
+            {
+                return Ok(user);
+            }
+            return NotFound();
         }
 
 
